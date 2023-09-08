@@ -1,0 +1,71 @@
+body{
+    background-image: url(../img/prueba.jpg)
+}
+
+.contenedorInformacionLogin{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    border: solid 5px #fddfb5;
+    color: #fddfb5;
+    background-color: #252525;
+    box-shadow: 0px 0px 5px black;
+}
+
+#logoLogin{
+    position: relative;
+    top: 20%;
+    width: 50%;
+}
+
+#mensajeLogin{
+    position: absolute;
+    bottom: 15%;
+    left: calc(25% - 150px);
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedorLogin{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    place-items: center;
+    border: solid 5px #760752;
+}
+
+.inputCambiado{
+    background: none;
+    font-size: 30px;
+    border: solid 3px #fddfb5;
+    border-radius: 5px;
+    color: #fddfb5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#verContrasenia{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/verContrasena.png);
+    background-size: cover;
+    margin-top: 7px;
+    margin-left: -37px;
+    display: inline;
+    cursor: pointer;
+}
+
+#botonIniciarSesion{
+    cursor: pointer;
+}
+
+#iniciarSesion{
+    width: 200px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="/css/clasesGlobales.css">
+    <meta name="author" content="Script TriByte">
+    <title>E.L.S - Iniciar Sesion</title>
+    <link rel="icon" href="/img/iconoPestana.png">
+</head>
+<body>
+    <div class="contenedorInformacionLogin">
+        <img id="logoLogin" src="/img/Logo del Sistema.png">
+        <label id="mensajeLogin"><b>Ingrese sus datos para<br>confirmar<br>su identidad.</b></label>
+        <div class="contenedorLogin">
+            <form action="">
+                <label>Correo Electrónico:</label><br>
+                <input class="inputCambiado" id="email" type="text">
+                <br><br>
+                <label>Contraseña:</label><br>
+                <input class="inputCambiado" id="contrasenia" type="password">
+                <div id="verContrasenia"></div>
+                <br><br><br>
+            </form>
+            <a id="iniciarSesion" href="/"><button class="inputCambiado" id="botonIniciarSesion">Iniciar Sesión</button></a>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
