@@ -6,6 +6,7 @@ body{
     background-position: center center;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: #4b4b4b;
 }
 
 .cambioCursor{

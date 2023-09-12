@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
-  background-image: url(../img/BGAlmacen.png);
-}
-
 .contenedorAccesoAListas{
+  position: absolute;
+  width: calc(100% - 500px);
+  height: calc(100% - 500px);
+  top: calc(50% - 360px);
+  left: 12%;
+  height: 600px;
+  padding: 30px;
+  background-image: url(/img/BGAlmacen.png);
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px black;
+
   font-family: 'Roboto', sans-serif;
-  display: grid;
-  gap: 40px;
-  position: relative;
-  left: 200px;
-  top: 150px;
 }
 
 .botonListado{
@@ -31,7 +34,7 @@ body{
 
 #labelAOrdenar{
   position: absolute;
-  left: 20px;
+  left: 3%;
 }
 
 .footerAlmacen{
@@ -40,7 +43,7 @@ body{
   background-color: rgba(0, 0, 0, 0.6);
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
-  bottom: 3%;
+  bottom: 0%;
   left: 0%;
   display: flex;
   justify-content: right;
