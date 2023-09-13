@@ -95,3 +95,20 @@ a{
 .divEnHeader{
     margin-top: 10px;
 }
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: cadetblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+  }
+  
+  .menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+  }
