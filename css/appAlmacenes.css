@@ -2,11 +2,10 @@
 
 .contenedorAccesoAListas{
   position: absolute;
-  width: calc(100% - 500px);
-  height: calc(100% - 500px);
-  top: calc(50% - 360px);
+  width: 900px;
+  height: 300px;
+  top: 150px;
   left: 12%;
-  height: 600px;
   padding: 30px;
   background-image: url(/img/BGAlmacen.png);
   background-size: cover;
@@ -27,14 +26,11 @@
   width: 400px;
   height: fit-content;
   display: flex;
-  justify-content: right;
+  text-align: right;
   align-items: center;
-  gap: 10px;
-}
-
-#labelAOrdenar{
-  position: absolute;
-  left: 3%;
+  margin-top: 20px;
+  position: relative;
+  top: -15px;
 }
 
 .footerAlmacen{
@@ -47,7 +43,6 @@
   left: 0%;
   display: flex;
   justify-content: right;
-  align-items: center;
   padding: 5px 5px 5px 5px;
 }
 

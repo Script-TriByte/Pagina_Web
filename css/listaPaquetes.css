@@ -124,3 +124,10 @@ option{
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (max-width: 1400px) and (max-height: 768px) {
+    .contenedorPaquetes{
+        position:absolute;
+        left: 400px;
+    }
+  }
