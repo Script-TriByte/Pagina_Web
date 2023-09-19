@@ -31,6 +31,7 @@
   margin-top: 20px;
   position: relative;
   top: -15px;
+  justify-content: right;
 }
 
 .footerAlmacen{
@@ -62,4 +63,9 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+#labelAOrdenar{
+  position: absolute;
+  left: 20px;
 }
