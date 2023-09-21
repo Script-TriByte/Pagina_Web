@@ -5,7 +5,7 @@ $("#crearLote").click(function(){
     $(".contenedorCrearLotes").show();
 })
 
-$("#cerrarContenedorCrear, #cancelarArmado").click(function(){
+$("#cerrarContenedorCrear, #eliminarArmado").click(function(){
     $("#ajusteBrillo").hide();
     $(".contenedorCrearLotes").hide();
 })
