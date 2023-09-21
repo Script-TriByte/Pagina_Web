@@ -1,4 +1,4 @@
-document.querySelector('form').addEventListener('submit', function (e) {
+document.getElementById('formularioContacto').addEventListener('submit', function (e) {
     e.preventDefault();
 
     fetch('correo.php', {
@@ -7,13 +7,20 @@ document.querySelector('form').addEventListener('submit', function (e) {
     })
     .then(response => response.json())
     .then(data => {
+        const respuesta = document.getElementById('respuesta');
+        respuesta.style.display = 'block';
+        
         if (data.success) {
-            window.alert('Su mensaje fue enviado con éxito.');
+            respuesta.textContent = 'Su mensaje fue enviado con éxito.';
+            respuesta.style.color = 'green';
         } else {
-            window.alert('Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo más tarde.');
+            respuesta.textContent = 'Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo más tarde.';
+            respuesta.style.color = 'red';
         }
     })
     .catch(error => {
         console.error('Error:', error);
     });
 });
+
+

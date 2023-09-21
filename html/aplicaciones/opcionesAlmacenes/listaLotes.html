@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/headerStyle.css">
     <link rel="stylesheet" href="/css/clasesGlobales.css">
+    <link rel="stylesheet" href="/css/listaLotes.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>E.L.S - Lista de Paquetes</title>
 </head>
@@ -13,19 +14,25 @@
     <header class="textoClaro">
         <a href="/"><img class="logo" src="/img/Logo del Sistema.png"></a>
         <nav>
-          <ul>
+          <ul class="menu">
             <li class="cambioCursor"><a href="/">HOME</a></li>
             <li><a href="/html/opcionesHeader/acercaDe.html">ACERCA DE</a></li>
             <li class="cambioCursor"><a href="/html/opcionesHeader/contacto.html">CONTACTO</a></li>
             <li><div class="boton textoClaro cambioCursor divEnHeader" id="idiomaDelSistema"></div></li>
             <li><div class="boton textoClaro cambioCursor divEnHeader" id="aparienciaDelSistema"></div></li>
-            <div id="contenedorUsuario">
-              <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
-              <button class="boton textoClaro">NOMBRE DEL USUARIO</button>
-            </div>
+            <li>
+              <div id="contenedorUsuario">
+                <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
+                <button class="boton textoClaro">NOMBRE DEL USUARIO</button>
+                <ul class="submenu">
+                  <li><img class="salir" id="iconoSalida" src="/img/iconoSalir.png">
+                    <a href="/html/login.html">CERRAR SESIÓN</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </nav>
-    </header>
+      </header>
     <div class="contenedorLotes">
         <div class="opcionesLotes">
             <img src="/img/iconoAgregar.png" class="cambioCursor" id="crearLote">
@@ -47,18 +54,24 @@
         </div>
         <hr>
     </div>
-    <div class="contenedorCrearPaquetes roboto textoClaro">
+    <div class="contenedorCrearLotes roboto textoClaro">
         <img class="cambioCursor" id="cerrarContenedorCrear" src="/img/iconoCerrar.png">
-        <form action="" method="post" id="formularioCrearPaquetes">
-            <label><b>ID del Paquete: </b></label>
-            <input type="number" class="inputCrearPaquete textoClaro roboto" min="1" max="9999999" required>
+        <form action="" method="post" id="formularioCrearLotes">
+            <label><b>ID del Lote: </b></label>
+            <input type="number" class="inputCrearLote textoClaro roboto" min="1" max="9999999" required>
             <br><br>
-            <label><b>Cantidad de Artículos: </b></label>
+            <label><b>Cantidad de Paquetes: </b></label>
             <input type="number" class="inputCrearLote textoClaro roboto" min="1" max="20" required>
             <br><br>
-            <button type="submit" class="botonCrearLote roboto textoClaro cambioCursor" id="botonCrearPaquete"><b>Embalsar Paquete</b></button>
+            <label><b>Destino: </b></label>
+            <input type="text" class="inputCrearLote textoClaro roboto" required>
+            <br><br>
+            <label><b>Almacen: </b></label>
+            <input type="number" class="inputCrearLote textoClaro roboto" min="1" max="9999999" required>
+            <br><br>
+            <button type="submit" class="botonCrearLote roboto textoClaro cambioCursor" id="botonCrearLote"><b>Embalsar Lote</b></button>
         </form>
-        <button class="botonCrearLotes roboto textoClaro cambioCursor" id="cancelarArmado"><b>Cancelar Armado</b></button>
+        <button class="botonCrearLote roboto textoClaro cambioCursor" id="cancelarArmado"><b>Cancelar Armado</b></button>
     </div>
     <script type="module" src="/js/listaLotes.js"></script>
 </body>
