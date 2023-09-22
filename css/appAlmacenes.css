@@ -2,8 +2,8 @@
 
 .contenedorAccesoAListas{
   position: absolute;
-  width: 900px;
-  height: 300px;
+  width: calc(100% - 500px);
+  height: 55%;
   top: 150px;
   left: 12%;
   padding: 30px;
