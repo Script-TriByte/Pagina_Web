@@ -12,22 +12,28 @@
     <title>E.L.S - Información del Camión</title>
 </head>
 <body>
-    <header class="textoClaro">
-        <a href="/"><img class="logo" src="/img/Logo del Sistema.png"></a>
-        <nav>
-          <ul>
-            <li class="cambioCursor"><a href="/">HOME</a></li>
-            <li><a href="/html/opcionesHeader/acercaDe.html">ACERCA DE</a></li>
-            <li class="cambioCursor"><a href="/html/opcionesHeader/contacto.html">CONTACTO</a></li>
-            <li><div class="boton textoClaro cambioCursor divEnHeader" id="idiomaDelSistema"></div></li>
-            <li><div class="boton textoClaro cambioCursor divEnHeader" id="aparienciaDelSistema"></div></li>
-            <div id="contenedorUsuario">
-              <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
-              <button class="boton textoClaro cambioCursor">NOMBRE DEL USUARIO</button>
-            </div>
-          </ul>
-        </nav>
-    </header>
+  <header class="textoClaro">
+    <a href="/"><img class="logo" src="/img/Logo del Sistema.png"></a>
+    <nav>
+      <ul class="menu">
+        <li class="cambioCursor"><a href="/">HOME</a></li>
+        <li><a href="/html/opcionesHeader/acercaDe.html">ACERCA DE</a></li>
+        <li class="cambioCursor"><a href="/html/opcionesHeader/contacto.html">CONTACTO</a></li>
+        <li><div class="boton textoClaro cambioCursor divEnHeader" id="idiomaDelSistema"></div></li>
+        <li><div class="boton textoClaro cambioCursor divEnHeader" id="aparienciaDelSistema"></div></li>
+        <li>
+          <div id="contenedorUsuario">
+            <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
+            <button class="boton textoClaro">NOMBRE DEL USUARIO</button>
+            <ul class="submenu">
+              <li><img class="salir" id="iconoSalida" src="/img/iconoSalir.png">
+                <a href="/html/login.html">CERRAR SESIÓN</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <div class="contenedorAccesoAListas">
       <a href="#" class="botonListado">
         <div class="cambioCursor textoClaro" id="botonListaArticulos">
