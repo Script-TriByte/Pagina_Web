@@ -7,28 +7,31 @@
     top: 15%;
     left: 50%;
     padding: 30px;
-    background-image: url(/img/BGCamiones.png);
+    background-image: url(/img/BGAlmacen.png);
     background-size: cover;
     border-radius: 30px;
     box-shadow: 0px 0px 5px black;
     transform: translateX(-50%);
     font-family: 'Roboto', sans-serif;
 }
-
+  
 .botonListado{
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 0px 0px 10px black;
     background: none;
     border: solid 3px #fddfb5;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-    width: 500px;
+    width: 400px;
     height: fit-content;
     display: flex;
-    justify-content: right;
+    text-align: right;
     align-items: center;
-    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    top: -15px;
+    justify-content: right;
 }
 
 .iconoBotonListado{
@@ -56,10 +59,11 @@
 }
 
 #contenedorVehiculoAsignado{
-    right: 3%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+        position: absolute;
+        right: 3%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
 }
 
 #imagenVehiculoAsignado{
