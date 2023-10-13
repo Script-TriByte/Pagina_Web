@@ -1,25 +1,20 @@
 document.getElementById('formularioContacto').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    fetch('correo.php', {
+    fetch('../../php/correo.php', {
         method: 'POST',
         body: new FormData(this)
     })
     .then(response => response.json())
     .then(data => {
-        const respuesta = document.getElementById('respuesta');
-        respuesta.style.display = 'block';
-        
         if (data.success) {
-            respuesta.textContent = 'Su mensaje fue enviado con éxito.';
-            respuesta.style.color = 'green';
+            alert("Si");
         } else {
-            respuesta.textContent = 'Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo más tarde.';
-            respuesta.style.color = 'red';
+            alert("Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo más tarde.");
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        alert(error);
     });
 });
 

@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $destinatario = "belenrosas97@gmail.com";
     $asunto = "Nuevo mensaje de formulario de contacto";
 
-    $contenido = "Nombre: $nombre\n";
-    $contenido .= "Teléfono: $telefono\n";
-    $contenido .= "Correo electrónico: $email\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+    $contenido = "Nombre: $nombre\n"
+    .  "Teléfono: $telefono\n"
+    . "Correo electrónico: $email\n"
+    . "Mensaje:\n$mensaje\n";
 
     if (mail($destinatario, $asunto, $contenido)) {
         $response = array("success" => true);
