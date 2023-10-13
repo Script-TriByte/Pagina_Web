@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Script TriByte">
-    <link rel="stylesheet" href="/css/clasesGlobales.css">
-    <link rel="stylesheet" href="/css/appCamiones.css">
-    <link rel="stylesheet" href="/css/headerStyle.css">
-    <link rel="icon" href="/img/iconoPestana.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>E.L.S - Información del Camión</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Script TriByte">
+        <link rel="stylesheet" href="/css/appCamiones.css">
+        <link rel="stylesheet" href="/css/clasesGlobales.css">
+        <link rel="stylesheet" href="/css/headerStyle.css">
+        <link rel="icon" href="/img/iconoPestana.png">
+        <title>E.L.S - Aplicacion de Camiones</title>
+    </head>
 <body>
-  <header class="textoClaro">
-    <a href="/"><img class="logo" src="/img/Logo del Sistema.png"></a>
-    <nav>
-      <ul class="menu">
-        <li class="cambioCursor"><a href="/">HOME</a></li>
-        <li><a href="/html/opcionesHeader/acercaDe.html">ACERCA DE</a></li>
-        <li class="cambioCursor"><a href="/html/opcionesHeader/contacto.html">CONTACTO</a></li>
-        <li><div class="boton textoClaro cambioCursor divEnHeader" id="idiomaDelSistema"></div></li>
-        <li><div class="boton textoClaro cambioCursor divEnHeader" id="aparienciaDelSistema"></div></li>
-        <li>
-          <div id="contenedorUsuario">
-            <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
-            <button class="boton textoClaro">NOMBRE DEL USUARIO</button>
-            <ul class="submenu">
-              <li><img class="salir" id="iconoSalida" src="/img/iconoSalir.png">
-                <a href="/html/login.html">CERRAR SESIÓN</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-    <div class="contenedorAccesoAListas">
-      <a href="#" class="botonListado">
-        <div class="cambioCursor textoClaro" id="botonListaContenido">
-          <label class="cambioCursor" id="labelAOrdenar"><b>Contenidos del Camión</b></label>
-          <img class="iconoBotonListado" id="iconoListadoContenido" src="/img/iconoCamion.png">
+    <img id="ajusteBrillo" src="/img/BGNegro.png">
+    <header class="textoClaro">
+        <a href="/"><img class="logo" src="/img/Logo del Sistema.png"></a>
+        <nav>
+          <ul class="menu">
+            <li class="cambioCursor"><a href="/">HOME</a></li>
+            <li><a href="/html/opcionesHeader/acercaDe.html">ACERCA DE</a></li>
+            <li class="cambioCursor"><a href="/html/opcionesHeader/contacto.html">CONTACTO</a></li>
+            <li><div class="boton textoClaro cambioCursor divEnHeader" id="idiomaDelSistema"></div></li>
+            <li><div class="boton textoClaro cambioCursor divEnHeader" id="aparienciaDelSistema"></div></li>
+            <li>
+              <div id="contenedorUsuario">
+                <img class="usuario" id="iconoUsuario" src="/img/iconoUsuario.png">
+                <button class="boton textoClaro">NOMBRE DEL USUARIO</button>
+                <ul class="submenu">
+                  <li><img class="salir" id="iconoSalida" src="/img/iconoSalir.png">
+                    <a href="/html/login.html">CERRAR SESIÓN</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedorCamiones">
+        <div class="opcionesCamiones">
+            <form action="/" id="formularioBuscarCamiones" method="post">
+                <input class="roboto textoClaro" id="barraDeBusqueda" name="barraDeBusqueda" placeholder="Buscar Camion">
+                <div class="roboto textoClaro" id="contenedorFiltroDeBusqueda">
+                    <label><b>Filtro de Búsqueda:</b></label>
+                    <select class="roboto textoClaro" id="filtroDeLista" name="filtroDeLista">
+                        <option value="codigoIdentificador"><b>ID Almacen</b></option>
+                        <option value="codigoDeBulto"><b>ID Camion</b></option>
+                    <select>
+                </div>
+                <button type="submit" id="botonBuscar">
+                    <img class="cambioCursor" id="imagenBotonBuscar" src="/img/iconoLupa.png">
+                </button>
+            </form>
         </div>
-      </a>
-      <a href="#" class="botonListado">
-        <div class="cambioCursor textoClaro" id="botonListaDestino">
-          <label class="cambioCursor" id="labelAOrdenar"><b>Destinos Pendientes</b></label>
-          <img class="iconoBotonListado" id="iconoListadoDestino" src="/img/iconoSeguimiento.png">
-        </div>
-      </a>
-  </div>
-  <footer class="footerAlmacen textoClaro absoluto">
-    <div class="absoluto" id="contenedorVehiculoAsignado">
-      <img id="imagenVehiculoAsignado" src="/img/iconoCamion.png">
-      Vehículo Asignado
+        <hr>
     </div>
-  </footer>
-  <script src="/js/aplicacionCamiones.js"></script>
 </body>
 </html>
