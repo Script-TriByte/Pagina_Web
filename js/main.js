@@ -47,7 +47,7 @@ function revelarAplicacionSeguimiento(){
 function revelarBackoffice(){
   $("#nombreAplicacion").html("BACKOFFICE DE <br> ADMINISTRACIÓN");
   $("#informacionApp").html("Gestione los Usuarios del Sistema, así como todos los Almacenes y Vehículos en disposición.");
-  $("#accesoAplicacion").attr("href", urlBackoffice);
+  $("#accesoAplicacion").attr("href", "/html/aplicaciones/appBackOffice.html");
   $(".contenedorInformacion").css("background-image", "url(/img/BGBackoffice.png)");
 
   mostrarFlechaIzquierda();
