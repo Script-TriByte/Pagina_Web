@@ -15,7 +15,7 @@
         top: 15%;
         left: 50%;
         padding: 30px;
-        background-image: url(/img/BGAlmacen.png);
+        background-image: url(/img/BGCamiones.png);
         background-size: cover;
         border-radius: 30px;
         box-shadow: 0px 0px 5px black;
@@ -113,6 +113,12 @@ option{
 
     .Listado{
         position:absolute;
-        left: 330px;
+        top: 40%;
+        left: 27%;
+        height: 120px;
+    }
+
+    #confirmacionCamion{
+        font-size: 7px;
     }
 }
