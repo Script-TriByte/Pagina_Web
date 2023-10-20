@@ -1,19 +1,19 @@
-function revelarPreviewArticulos(){
-    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGNegro.png)");
+function revelarPreviewUsuarios(){
+    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGUsuarios.png)");
     $("#iconoListadoUsuarios").attr("src", "/img/iconoArticuloHover.png");
     $("#botonListaAlmacenes").css("opacity", "50%");
     $("#botonListaVehiculos").css("opacity", "50%");
 }
 
-function revelarPreviewPaquetes(){
-    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGNegro.png)");
+function revelarPreviewAlmacenes(){
+    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGAlmacenes.png)");
     $("#iconoListadoAlmacenes").attr("src", "/img/iconoPaqueteHover.png");
     $("#botonListaUsuarios").css("opacity", "50%");
     $("#botonListaVehiculos").css("opacity", "50%");
 }
 
-function revelarPreviewLotes(){
-    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGNegro.png)");
+function revelarPreviewVehiculos(){
+    $(".contenedorAccesoAListas").css("background-image", "url(/img/BGVehiculos.png)");
     $("#iconoListaVehiculos").attr("src", "/img/iconoLoteHover.png");
     $("#botonListaUsuarios").css("opacity", "50%");
     $("#botonListaAlmacenes").css("opacity", "50%");
@@ -33,7 +33,7 @@ function restaurarBody(){
 }
 
 $("#botonListaUsuarios").mouseover(function() {
-    revelarPreviewArticulos();
+    revelarPreviewUsuarios();
 });
 
 $("#botonListaUsuarios").mouseout(function() {
@@ -41,7 +41,7 @@ $("#botonListaUsuarios").mouseout(function() {
 });
 
 $("#botonListaAlmacenes").mouseover("mouseover", function() {
-    revelarPreviewPaquetes();
+    revelarPreviewAlmacenes();
 });
 
 $("#botonListaAlmacenes").mouseout(function() {
@@ -49,7 +49,7 @@ $("#botonListaAlmacenes").mouseout(function() {
 });
 
 $("#botonListaVehiculos").mouseover(function() {
-    revelarPreviewLotes();
+    revelarPreviewVehiculos();
 });
 
 $("#botonListaVehiculos").mouseout(function() {
